@@ -32,22 +32,65 @@
         <p>
           Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
         </p>
+
+        <form enctype="multipart/form-data">
+          <!-- selecionar enctype="multipart/form-data" quando tiver um input tipo file no formulário  -->
+
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input id="fullname" type="text" placeholder="Digite aqui">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input type="date" id="birth" lang="pt-br">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="no-binary">Não-binário</option>
+                <option value="null">Prefiro não dizer</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10"
+                placeholder="Informe quaisquer Informações médicas que a escola precise saber a respeito da criança."></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" name="birth-file" id="birth-file">
+              <img src="assests/images/cloud-upload.svg" alt="upload-image">
+              <p>
+                clique aqui para selecionar seu arquivo
+              </p>
+            </div>
+
+          </fieldset>
+        </form>
       </div>
     </main>
 
     <aside>
       <div class="aside-container">
-      <header>
-        <img src="assests/icons/star.svg" alt="logo">
-        <h2>
-          Porque cada momento de <span>aprendizado</span> conta
+        <header>
+          <img src="assests/icons/star.svg" alt="logo">
           <h2>
-            <p>
-              Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
-            </p>
-      </header>
-     
-      <img src="assests/images/Illustration.svg" alt="Ilustração, de uma professora com crianças">
+            Porque cada momento de <span>aprendizado</span> conta
+            <h2>
+              <p>
+                Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+              </p>
+        </header>
+
+        <img src="assests/images/Illustration.svg" alt="Ilustração, de uma professora com crianças">
       </div>
     </aside>
   </div>
