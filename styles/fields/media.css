@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  #app {
+    display: grid; /* Empilha aside e main verticalmente */
+    grid-template-columns: 1fr;
+    overflow-y: auto; /* Ativa rolagem geral */
+  
+  
+  }
+
+  aside {
+    padding: 2rem;
+    margin-bottom: 2rem; /* Espaçamento entre aside e main */
+  }
+
+  main {
+    padding: 2.4rem;
+  }
+
+  aside, main {
+    height: max-content;
+    overflow-y: auto;
+    
+  }
+}
